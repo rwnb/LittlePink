@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FB746BF668CBA5AA0895E40 /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284FC93579609AEC8D90E846 /* Pods_LittlePink.framework */; };
 		E237AE34298A4AB500B40717 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E237AE33298A4AB500B40717 /* AppDelegate.swift */; };
 		E237AE36298A4AB500B40717 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E237AE35298A4AB500B40717 /* SceneDelegate.swift */; };
 		E237AE38298A4AB500B40717 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E237AE37298A4AB500B40717 /* ViewController.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DB13F49BDAD7B43FCA1A32D /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
+		284FC93579609AEC8D90E846 /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B070D18F2509F7AE9343FF95 /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
 		E237AE30298A4AB500B40717 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E237AE33298A4AB500B40717 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E237AE35298A4AB500B40717 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB746BF668CBA5AA0895E40 /* Pods_LittlePink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59E0CFA275A4AC7DC8928618 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				284FC93579609AEC8D90E846 /* Pods_LittlePink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94A27E5B84A0B4F2DD3BFF01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B070D18F2509F7AE9343FF95 /* Pods-LittlePink.debug.xcconfig */,
+				1DB13F49BDAD7B43FCA1A32D /* Pods-LittlePink.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E237AE27298A4AB500B40717 = {
 			isa = PBXGroup;
 			children = (
 				E237AE32298A4AB500B40717 /* LittlePink */,
 				E237AE31298A4AB500B40717 /* Products */,
+				94A27E5B84A0B4F2DD3BFF01 /* Pods */,
+				59E0CFA275A4AC7DC8928618 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E237AE47298A4AB700B40717 /* Build configuration list for PBXNativeTarget "LittlePink" */;
 			buildPhases = (
+				2A5AD865D0F814E1412AF822 /* [CP] Check Pods Manifest.lock */,
 				E237AE2C298A4AB500B40717 /* Sources */,
 				E237AE2D298A4AB500B40717 /* Frameworks */,
 				E237AE2E298A4AB500B40717 /* Resources */,
+				A863752B4583A5FFED222418 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A5AD865D0F814E1412AF822 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LittlePink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A863752B4583A5FFED222418 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E237AE2C298A4AB500B40717 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		E237AE48298A4AB700B40717 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B070D18F2509F7AE9343FF95 /* Pods-LittlePink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,6 +387,7 @@
 		};
 		E237AE49298A4AB700B40717 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB13F49BDAD7B43FCA1A32D /* Pods-LittlePink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
