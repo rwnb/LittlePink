@@ -10,11 +10,15 @@
 		5FB746BF668CBA5AA0895E40 /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284FC93579609AEC8D90E846 /* Pods_LittlePink.framework */; };
 		E237AE34298A4AB500B40717 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E237AE33298A4AB500B40717 /* AppDelegate.swift */; };
 		E237AE36298A4AB500B40717 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E237AE35298A4AB500B40717 /* SceneDelegate.swift */; };
-		E237AE38298A4AB500B40717 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E237AE37298A4AB500B40717 /* ViewController.swift */; };
 		E237AE3B298A4AB500B40717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E237AE39298A4AB500B40717 /* Main.storyboard */; };
 		E237AE3E298A4AB500B40717 /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E237AE3C298A4AB500B40717 /* LittlePink.xcdatamodeld */; };
 		E237AE40298A4AB700B40717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E237AE3F298A4AB700B40717 /* Assets.xcassets */; };
 		E237AE43298A4AB700B40717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E237AE41298A4AB700B40717 /* LaunchScreen.storyboard */; };
+		E24DFF0F298BC3A300B280D2 /* FllowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DFF0E298BC3A300B280D2 /* FllowVC.swift */; };
+		E24DFF11298BC3BF00B280D2 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DFF10298BC3BF00B280D2 /* DiscoveryVC.swift */; };
+		E24DFF13298BC3DF00B280D2 /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DFF12298BC3DF00B280D2 /* NearByVC.swift */; };
+		E24DFF15298BC53500B280D2 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DFF14298BC53500B280D2 /* Constans.swift */; };
+		E2CB47CB298BBB2900C2333F /*  .swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CB47CA298BBB2900C2333F /*  .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +28,16 @@
 		E237AE30298A4AB500B40717 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E237AE33298A4AB500B40717 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E237AE35298A4AB500B40717 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E237AE37298A4AB500B40717 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E237AE3A298A4AB500B40717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E237AE3D298A4AB500B40717 /* LittlePink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittlePink.xcdatamodel; sourceTree = "<group>"; };
 		E237AE3F298A4AB700B40717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E237AE42298A4AB700B40717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E237AE44298A4AB700B40717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E24DFF0E298BC3A300B280D2 /* FllowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FllowVC.swift; sourceTree = "<group>"; };
+		E24DFF10298BC3BF00B280D2 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		E24DFF12298BC3DF00B280D2 /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
+		E24DFF14298BC53500B280D2 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		E2CB47CA298BBB2900C2333F /*  .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,6 @@
 				B070D18F2509F7AE9343FF95 /* Pods-LittlePink.debug.xcconfig */,
 				1DB13F49BDAD7B43FCA1A32D /* Pods-LittlePink.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,7 +92,8 @@
 			children = (
 				E237AE33298A4AB500B40717 /* AppDelegate.swift */,
 				E237AE35298A4AB500B40717 /* SceneDelegate.swift */,
-				E237AE37298A4AB500B40717 /* ViewController.swift */,
+				E24DFF14298BC53500B280D2 /* Constans.swift */,
+				E24DFF16298BC68500B280D2 /* Home */,
 				E237AE39298A4AB500B40717 /* Main.storyboard */,
 				E237AE3F298A4AB700B40717 /* Assets.xcassets */,
 				E237AE41298A4AB700B40717 /* LaunchScreen.storyboard */,
@@ -93,6 +101,17 @@
 				E237AE3C298A4AB500B40717 /* LittlePink.xcdatamodeld */,
 			);
 			path = LittlePink;
+			sourceTree = "<group>";
+		};
+		E24DFF16298BC68500B280D2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E2CB47CA298BBB2900C2333F /*  .swift */,
+				E24DFF10298BC3BF00B280D2 /* DiscoveryVC.swift */,
+				E24DFF0E298BC3A300B280D2 /* FllowVC.swift */,
+				E24DFF12298BC3DF00B280D2 /* NearByVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,10 +229,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E237AE38298A4AB500B40717 /* ViewController.swift in Sources */,
+				E24DFF13298BC3DF00B280D2 /* NearByVC.swift in Sources */,
 				E237AE34298A4AB500B40717 /* AppDelegate.swift in Sources */,
+				E24DFF15298BC53500B280D2 /* Constans.swift in Sources */,
+				E2CB47CB298BBB2900C2333F /*  .swift in Sources */,
+				E24DFF0F298BC3A300B280D2 /* FllowVC.swift in Sources */,
 				E237AE36298A4AB500B40717 /* SceneDelegate.swift in Sources */,
 				E237AE3E298A4AB500B40717 /* LittlePink.xcdatamodeld in Sources */,
+				E24DFF11298BC3BF00B280D2 /* DiscoveryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
