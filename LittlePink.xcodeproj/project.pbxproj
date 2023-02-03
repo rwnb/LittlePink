@@ -18,6 +18,8 @@
 		E24DFF11298BC3BF00B280D2 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DFF10298BC3BF00B280D2 /* DiscoveryVC.swift */; };
 		E24DFF13298BC3DF00B280D2 /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DFF12298BC3DF00B280D2 /* NearByVC.swift */; };
 		E24DFF15298BC53500B280D2 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DFF14298BC53500B280D2 /* Constans.swift */; };
+		E26895B8298CF23600143B6E /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26895B6298CF23600143B6E /* WaterfallCell.swift */; };
+		E26895B9298CF23600143B6E /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26895B7298CF23600143B6E /* WaterfallVC.swift */; };
 		E2CB47CB298BBB2900C2333F /*  .swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CB47CA298BBB2900C2333F /*  .swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		E24DFF10298BC3BF00B280D2 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
 		E24DFF12298BC3DF00B280D2 /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
 		E24DFF14298BC53500B280D2 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		E26895B6298CF23600143B6E /* WaterfallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
+		E26895B7298CF23600143B6E /* WaterfallVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
 		E2CB47CA298BBB2900C2333F /*  .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +110,8 @@
 		E24DFF16298BC68500B280D2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E26895B6298CF23600143B6E /* WaterfallCell.swift */,
+				E26895B7298CF23600143B6E /* WaterfallVC.swift */,
 				E2CB47CA298BBB2900C2333F /*  .swift */,
 				E24DFF10298BC3BF00B280D2 /* DiscoveryVC.swift */,
 				E24DFF0E298BC3A300B280D2 /* FllowVC.swift */,
@@ -232,6 +238,8 @@
 				E24DFF13298BC3DF00B280D2 /* NearByVC.swift in Sources */,
 				E237AE34298A4AB500B40717 /* AppDelegate.swift in Sources */,
 				E24DFF15298BC53500B280D2 /* Constans.swift in Sources */,
+				E26895B9298CF23600143B6E /* WaterfallVC.swift in Sources */,
+				E26895B8298CF23600143B6E /* WaterfallCell.swift in Sources */,
 				E2CB47CB298BBB2900C2333F /*  .swift in Sources */,
 				E24DFF0F298BC3A300B280D2 /* FllowVC.swift in Sources */,
 				E237AE36298A4AB500B40717 /* SceneDelegate.swift in Sources */,
