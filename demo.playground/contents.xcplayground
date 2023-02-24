@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='值类型和引用类型'/>
+        <page name='闭包用法'/>
+        <page name='枚举'/>
+    </pages>
+</playground>

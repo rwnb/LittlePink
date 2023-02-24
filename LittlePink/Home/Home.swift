@@ -27,6 +27,7 @@ class HomeVC: ButtonBarPagerTabStripViewController {
         
         
         
+        
         super.viewDidLoad()
         
         containerView.bounces = false
